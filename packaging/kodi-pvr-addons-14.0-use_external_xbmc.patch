@@ -1,0 +1,13 @@
+diff --git a/addons/Makefile.include.am b/addons/Makefile.include.am
+index 9817ad9..ca99b4e 100644
+--- a/addons/Makefile.include.am
++++ b/addons/Makefile.include.am
+@@ -2,7 +2,7 @@
+ # Makefile include for XBMC PVR add-ons
+ #
+ 
+-INCLUDES        = -I. -I$(abs_top_srcdir)/xbmc -I$(abs_top_srcdir)/lib @HOST_INCLUDES@
++INCLUDES        = -I. -I/usr/include/kodi -I$(abs_top_srcdir)/xbmc -I$(abs_top_srcdir)/lib @HOST_INCLUDES@
+ WARNINGS        = -Wall -Wextra -Wno-missing-field-initializers -Woverloaded-virtual -Wno-parentheses
+ DEFINES         = @ARCH_DEFINES@ -DUSE_DEMUX -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS
+ AM_CXXFLAGS     = -g -O2 -fPIC $(WARNINGS) $(DEFINES) @HOST_CXXFLAGS@
